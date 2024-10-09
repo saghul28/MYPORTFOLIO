@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { id, primary } from "./common";
+import {  primary } from "./common";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
