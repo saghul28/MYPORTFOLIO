@@ -4,8 +4,8 @@ import { Button } from "./Button";
 
 const AboutUs = () => {
   return (
-    <div className="w-full flex mx-auto justify-evenly ">
-      <div className="w-1/2">
+    <div className="w-full flex flex-col-reverse items-center   md:flex-row mx-auto md:justify-evenly ">
+      <div className="w-full  md:w-1/2">
         <p className="text-justify font-medium">
           I am a dedicated app developer with one year of experience
           specializing in React Native for front-end development and Python with
@@ -24,7 +24,7 @@ const AboutUs = () => {
           />
         </div>
       </div>
-      <div className="w-1/4 ">
+      <div className="w-1/2 md:w-1/4 ">
         <img src={myImage} className=" w-full object-cover rounded-full"></img>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../assets/Rectangle7.png";
+import myImage from "../assets/medistock.png";
 
 const ProjectComponent = () => {
   const project = {
@@ -9,19 +9,19 @@ const ProjectComponent = () => {
   };
 
   return (
-    <div  className="flex items-center  w-3/4  mx-auto rounded-lg border-2">
+    <div  className="flex flex-col md:flex-row items-center md:w-3/4  mx-auto rounded-lg border-2">
       {/* Image container */}
-      <div className="w-1/2">
+      <div className="w-full  md:w-1/2">
         <img
           src={myImage}
-          className="h-[300px] w-full object-cover rounded-lg"
+          className="w-full h-[300px] object-fill rounded-lg"
           alt="Project Image"
         />
       </div>
 
       {/* Content container */}
-      <div className="p-4 w-1/2">
-        <h1 className="text-3xl font-bold">{project.title}</h1>
+      <div className="p-4 w-full md:w-1/2">
+        <h1 className="text-3xl font-bold ">{project.title}</h1>
         <p className="text-lg text-justify">{project.description}</p>
       </div>
     </div>

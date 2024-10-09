@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  primary } from "./common";
+import { primary } from "./common";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -15,51 +15,6 @@ const ContactUs = () => {
       [name]: value,
     });
   };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   // Validate form fields
-  //   if (
-  //     formData.name !== "" &&
-  //     formData.email !== "" &&
-  //     formData.message !== ""
-  //   ) {
-  //     // Optional: Email format validation (simple regex)
-  //     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  //     if (!emailPattern.test(formData.email)) {
-  //       alert("Please enter a valid email address.");
-  //       return;
-  //     }
-
-  //     try {
-  //       const response = await fetch(id, {
-
-  //         method: "GET",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(formData),
-  //       });
-
-  //       // Check if response is successful
-  //       if (!response.ok) {
-  //         throw new Error("Network response was not ok");
-  //       }
-
-  //       const result = await response.json();
-  //       alert("Form submitted successfully: " + result.result);
-
-  //       // Reset the form fields
-  //       setFormData({ name: "", email: "", message: "" });
-  //     } catch (error) {
-  //       console.error("Error:", error);
-  //       alert("Error submitting form: " + error.message);
-  //     }
-  //   } else {
-  //     alert("Please fill in all fields.");
-  //   }
-  // };
 
   return (
     <div className="max-w-md mx-auto p-6 rounded-lg shadow-lg">
@@ -146,10 +101,17 @@ const ContactUs = () => {
               y="0px"
               width="48"
               height="48"
-              viewBox="0 0 64 64"
+              viewBox="0 0 48 48"
             >
-              <path d="M55.879,0H8.121C3.644,0,0,3.644,0,8.121v47.758C0,60.356,3.644,64,8.121,64h47.758C60.356,64,64,60.356,64,55.879V8.121C64,3.644,60.356,0,55.879,0z M19.371,52.16H12.153V25.803h7.218V52.16z M15.76,23.179c-2.295,0-4.145-1.894-4.145-4.236c0-2.356,1.867-4.236,4.162-4.236c2.288,0,4.145,1.88,4.145,4.236C19.905,21.285,18.049,23.179,15.76,23.179z M52.16,52.16h-7.218v-18.49c0-4.389-1.682-7.387-5.899-7.387c-3.214,0-5.117,2.019-5.94,3.96c-0.298,0.725-0.373,1.724-0.373,2.722v19.069h-7.218V25.803h7.218v3.42c0.963-1.575,2.706-3.56,6.465-3.56c4.714,0,8.228,3.06,8.228,9.648V52.16z"></path>
-            </svg>
+              <path
+                fill="#0288D1"
+                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+              ></path>
+              <path
+                fill="#FFF"
+                d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
+              ></path>
+            </svg>{" "}
           </a>
         </div>
       </div>

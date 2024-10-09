@@ -1,7 +1,7 @@
 import React from "react";
 import { Intro } from "../Components/Intro";
 import Services from "./Services";
-import { ServicesComponet } from "../Components/ServicesComponet";
+
 import ProjectComponent from "../Components/ProjectComponent";
 import ContactUs from "../Components/ContactUs";
 import Header from "../Components/Header";
