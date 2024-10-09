@@ -1,4 +1,3 @@
-
 import React from "react";
 import myImage from "../assets/IMG_8555.jpg"; 
 

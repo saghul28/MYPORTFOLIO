@@ -1,6 +1,6 @@
 import React from "react";
 import myImage from "../assets/IMG_8555.jpg";
-import { Button } from "./Button"
+import { Button } from "./Button";
 
 const AboutUs = () => {
   return (
@@ -18,7 +18,10 @@ const AboutUs = () => {
           commitment to innovative solutions in the tech industry.
         </p>
         <div className="mt-4 font-extrabold">
-          <Button name="Resume" onClick="https://drive.google.com/file/d/143KLP_7QBdCSRTnEPPpPDt4hl2Fl0oyS/view?usp=sharing" />
+          <Button
+            name="Resume"
+            onClick="https://drive.google.com/file/d/143KLP_7QBdCSRTnEPPpPDt4hl2Fl0oyS/view?usp=sharing"
+          />
         </div>
       </div>
       <div className="w-1/4 ">
