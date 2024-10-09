@@ -1,7 +1,7 @@
 import React from "react";
 import { ServicesComponet } from "../Components/ServicesComponet";
 import myIcon1 from "../assets/webac.png";
-import myIcon2 from "../assets/appba.png";
+import myIcon2 from "../assets/appBa.png";
 
 const Services = () => {
   return (
