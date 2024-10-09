@@ -8,63 +8,63 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    // Validate form fields
-    if (
-      formData.name !== "" &&
-      formData.email !== "" &&
-      formData.message !== ""
-    ) {
-      // Optional: Email format validation (simple regex)
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(formData.email)) {
-        alert("Please enter a valid email address.");
-        return;
-      }
+  //   // Validate form fields
+  //   if (
+  //     formData.name !== "" &&
+  //     formData.email !== "" &&
+  //     formData.message !== ""
+  //   ) {
+  //     // Optional: Email format validation (simple regex)
+  //     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //     if (!emailPattern.test(formData.email)) {
+  //       alert("Please enter a valid email address.");
+  //       return;
+  //     }
 
-      try {
-        const response = await fetch(id, {
-          
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+  //     try {
+  //       const response = await fetch(id, {
 
-        // Check if response is successful
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
+  //         method: "GET",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(formData),
+  //       });
 
-        const result = await response.json();
-        alert("Form submitted successfully: " + result.result);
+  //       // Check if response is successful
+  //       if (!response.ok) {
+  //         throw new Error("Network response was not ok");
+  //       }
 
-        // Reset the form fields
-        setFormData({ name: "", email: "", message: "" });
-      } catch (error) {
-        console.error("Error:", error);
-        alert("Error submitting form: " + error.message);
-      }
-    } else {
-      alert("Please fill in all fields.");
-    }
-  };
+  //       const result = await response.json();
+  //       alert("Form submitted successfully: " + result.result);
+
+  //       // Reset the form fields
+  //       setFormData({ name: "", email: "", message: "" });
+  //     } catch (error) {
+  //       console.error("Error:", error);
+  //       alert("Error submitting form: " + error.message);
+  //     }
+  //   } else {
+  //     alert("Please fill in all fields.");
+  //   }
+  // };
 
   return (
     <div className="max-w-md mx-auto p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold text-center mb-4">Contact Me</h2>
-      <form className="space-y-4" onSubmit={handleSubmit} data-netlify="true">
+      <form className="space-y-4" data-netlify="true">
         <div>
           <label htmlFor="name" className="block font-semibold">
             Name:
