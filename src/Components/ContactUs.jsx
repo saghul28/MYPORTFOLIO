@@ -177,8 +177,9 @@ const ContactUs = () => {
         netlify
         data-netlify="true"
         onSubmit={handleSubmit}
+        name="contactme"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contactme" value="contact" />
         <div>
           <label htmlFor="name" className="block font-semibold">
             Name:
