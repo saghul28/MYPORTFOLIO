@@ -165,6 +165,7 @@ const ContactUs = () => {
       <form
         className="space-y-4"
         name="contact"
+        method="POST"
         netlify
         netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
