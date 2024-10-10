@@ -11,7 +11,7 @@ import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
-    <div className="mx-[40px] my-[30px] bg-[#F9FAFF]">
+    <div className="md:mx-[40px] md:my-[30px] bg-[#F9FAFF]">
       <div>
         <Header />
       </div>
