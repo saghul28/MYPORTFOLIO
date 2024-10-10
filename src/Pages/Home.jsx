@@ -29,9 +29,9 @@ const Home = () => {
         <h1 className="text-center text-2xl font-extrabold mb-6">About Me</h1>
         <AboutUs />
       </div>
-      <div className="my-10" id="contact">
+      {/* <div className="my-10" id="contact">
         <ContactUs />
-      </div>
+      </div> */}
       <div>
         <Footer />
       </div>

@@ -147,27 +147,27 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    // Use the fetch API to submit the form data to Netlify
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        "contactme": "contact",
-        ...formData,
-      }).toString(),
-    })
-      .then(() => {
-        setSuccessMessage("Your message has been sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Reset form
-      })
-      .catch((error) => {
-        console.error("Error submitting form:", error);
-        setSuccessMessage("There was an error submitting your message.");
-      });
-  };
+  //   // Use the fetch API to submit the form data to Netlify
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: new URLSearchParams({
+  //       "contactme": "contact",
+  //       ...formData,
+  //     }).toString(),
+  //   })
+  //     .then(() => {
+  //       setSuccessMessage("Your message has been sent successfully!");
+  //       setFormData({ name: "", email: "", message: "" }); // Reset form
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error submitting form:", error);
+  //       setSuccessMessage("There was an error submitting your message.");
+  //     });
+  // };
 
   return (
     <div className="max-w-md mx-auto p-6 rounded-lg shadow-lg">
