@@ -19,7 +19,13 @@ const ContactUs = () => {
   return (
     <div className="max-w-md mx-auto p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold text-center mb-4">Contact Me</h2>
-      <form className="space-y-4" name="contact" data-netlify="true" method='post'>
+      <form
+        className="space-y-4"
+        name="contact"
+        data-netlify="true"
+        method="post"
+      >
+        <input type="hidden" name="contactus" value="contact" />
         <div>
           <label htmlFor="name" className="block font-semibold">
             Name:
