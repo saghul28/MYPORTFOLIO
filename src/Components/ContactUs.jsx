@@ -119,7 +119,7 @@
 //               ></path>
 //             </svg>
 //           </a>
-          
+
 //         </div>
 //       </div>
 //     </div>
@@ -147,39 +147,30 @@ const ContactUs = () => {
     });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
 
-  //   // Use the fetch API to submit the form data to Netlify
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: new URLSearchParams({
-  //       "contactme": "contact",
-  //       ...formData,
-  //     }).toString(),
-  //   })
-  //     .then(() => {
-  //       setSuccessMessage("Your message has been sent successfully!");
-  //       setFormData({ name: "", email: "", message: "" }); // Reset form
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error submitting form:", error);
-  //       setSuccessMessage("There was an error submitting your message.");
-  //     });
-  // };
+    e.preventDefault();
+  };
 
   return (
     <div className="max-w-md mx-auto p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold text-center mb-4">Contact Me</h2>
       <form
         className="space-y-4"
+        name="contact"
         netlify
-        data-netlify="true"
+        netlify-honeypot="bot-field"
+        hidden
         onSubmit={handleSubmit}
-        name="contactme"
       >
-        <input type="hidden" name="contactme" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="name" className="block font-semibold">
             Name:
