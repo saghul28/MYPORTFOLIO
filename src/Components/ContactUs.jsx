@@ -151,7 +151,7 @@ const ContactUs = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
+      body: encode({ "form-name": "contact", ...formData }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -167,7 +167,6 @@ const ContactUs = () => {
         name="contact"
         netlify
         netlify-honeypot="bot-field"
-        hidden
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
