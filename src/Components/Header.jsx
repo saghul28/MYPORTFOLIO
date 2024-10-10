@@ -43,24 +43,27 @@ const Header = () => {
           >
             <li className="border-b-2 border-white md:border-0">
               <a
-                href="#services"
-                className="block py-2 px-3 text-white hover:border-b-2 hover:border-yellow  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0"
+                onClick={() => setOpen(false)}
+                href="#services "
+                className="block py-2 px-3 text-white hover:border-b-2 hover:border-yellow hover:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0"
               >
                 Services
               </a>
             </li>
             <li className="border-b-2 border-white md:border-0">
               <a
+                onClick={() => setOpen(false)}
                 href="#project"
-                className="block py-2 px-3 text-white hover:border-b-2 hover:border-yellow  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0"
+                className="block py-2 px-3 text-white hover:border-b-2 hover:border-yellow  rounded hover:bg-gray-100 hover:text-black md:hover:bg-transparent md:border-0  md:p-0"
               >
                 Projects
               </a>
             </li>
             <li className="border-b-2 border-white md:border-0 ">
               <a
+                onClick={() => setOpen(false)}
                 href="#about"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 hover:hover:border-b-2 hover:border-yellow md:hover:bg-transparent md:border-0  md:p-0"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 hover:text-black hover:hover:border-b-2 hover:border-yellow md:hover:bg-transparent md:border-0  md:p-0"
               >
                 About Me
               </a>
@@ -68,8 +71,9 @@ const Header = () => {
 
             <li>
               <a
+                onClick={() => setOpen(false)}
                 href="#contact"
-                className="block py-2 px-3 text-white hover:border-b-2 hover:border-yellow  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0"
+                className="block py-2 px-3 text-white hover:text-black hover:border-b-2 hover:border-yellow  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0"
               >
                 Contact Me
               </a>
