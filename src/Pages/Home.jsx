@@ -12,20 +12,20 @@ import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <div className="md:mx-[40px] md:my-[30px] bg-[#F9FAFF]">
-      <div>
+      <div >
         <Header />
       </div>
-      <div>
+      <div className="mx-[20px] md:mx-0">
         <Intro />
       </div>
-      <div id="services">
+      <div id="services" className="mx-[20px] md:mx-0">
         <Services />
       </div>
-      <div className="my-10" id="project">
+      <div className="my-10  mx-[20px] md:mx-0  " id="project">
         <h1 className="text-center text-2xl font-extrabold mb-6">Projects</h1>
         <ProjectComponent />
       </div>
-      <div id="about">
+      <div id="about" className="mx-[20px] md:mx-0">
         <h1 className="text-center text-2xl font-extrabold mb-6">About Me</h1>
         <AboutUs />
       </div>
